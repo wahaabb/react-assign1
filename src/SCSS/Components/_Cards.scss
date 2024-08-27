@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.card {
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 350px;
+}
+.card1-image,
+.card2-image,
+.card3-image,
+.card4-image,
+.card5-image,
+.card6-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card1-image {
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/white-sneaker-2048px-9405.jpg?auto=webp&quality=75&width=980&dpr=1.5');
+}
+.card2-image {
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/white-sneaker-2048px-9393.jpg?auto=webp&quality=75&width=980&dpr=1.5');
+}
+.card3-image {
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/white-sneaker-2048px-9338.jpg?auto=webp&quality=75&width=980&dpr=1.5');
+}
+.card4-image {
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/white-sneaker-2048px-9358.jpg?auto=webp&quality=75&width=980&dpr=1.5');
+}
+.card5-image {
+  background-image: url('https://images.pexels.com/photos/19537610/pexels-photo-19537610/free-photo-of-new-white-running-shoes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  transform: scaleX(-1);
+}
+.card6-image {
+  background-image: url('https://cdn.thewirecutter.com/wp-content/media/2024/05/white-sneaker-2048px-9373.jpg?auto=webp&quality=75&width=980&dpr=1.5');
+}
+.card-content {
+  padding: 20px;
+  // background: linear-gradient(45deg, #f000ff,  #6600FF);
+  background: #3E5151;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #DECBA4, #3E5151);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #DECBA4, #3E5151);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+  font-weight: 300;
+}
+.card-button:hover {
+  background-color: #ff7b7b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(255, 154, 158, 0.4);
+}
